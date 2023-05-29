@@ -33,7 +33,7 @@
         mode: '0770'
     - name: Install Google Cloud credentials
       ansible.builtin.copy:
-        src: /Users/beibeizhang/Documents/github-repo/fluentbit-opsagent-on-aws/hoyoverse-plat-logtest-01de86c8b98c.json
+        src: /tmp/gcp-service-account.json
         dest: /etc/google/auth/application_default_credentials.json
         mode: '0770'
     - name: Add credentials to environment for logging
